@@ -1,0 +1,38 @@
+:root {
+    /* Colors */
+    --white-color: #F8F8F8;
+    --light-grey-color: #F5F4F4;
+    --grey-color: #818285;
+    --grey-border: rgba(217, 217, 217, 0.5);
+    --orange-color: #FAA74C;
+}
+
+/* Global Styles */
+
+* {
+    background-color: var(--white-color);
+    font-family: 'Gill Sans', sans-serif;
+}
+
+/* Typography */
+
+/* ----------------------------------- */
+
+/* Hero Wrapper */
+
+.hero-wrapper {
+
+    /* Size */
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+
+
+
+
+
+/* ----------------------------------- */
+
+/* Body Wrapper */
