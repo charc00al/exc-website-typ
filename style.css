@@ -55,11 +55,13 @@ h1 {
 
 h2 {
     font-size: 3em; /* 48px */
+    color: var(--orange-color);
 }
 
 h3 {
-    font-size: 1.75em; /* 28px */
-}
+    font-size: 28px;
+/*     font-size: 1.75em; /* 28px */
+ */}
 
 h4 {
     font-size: 1.125em; /* 18px */
@@ -88,7 +90,7 @@ p, li {
     /* Grid */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 20%;
+    grid-template-rows: 20% auto;
     gap: var(--spacing);
     padding: calc(var(--spacing) * 2);
 }
@@ -106,10 +108,8 @@ p, li {
 
 .hamburger-menu {
     max-width: 100%;
-    max-height: calc(var(--spacing) * 3);
+    max-height: calc(var(--spacing) * 3.5);
 }
-
-
 
 /* Hero */
 
@@ -119,8 +119,6 @@ p, li {
     justify-self: center;
     text-align: center;
 }
-
-
 
 .never-stop {
     color: var(--white-color);
@@ -166,6 +164,8 @@ img {
     filter: brightness(0) invert(1);
 }
 
-.navbar-list, .squares-container {
+.navbar-list, .squares-container, .service-img, .fake-row {
     display: none;
 }
+
+
