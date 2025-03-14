@@ -12,18 +12,42 @@
 
 /* Global Styles */
 
+html {
+    font-size: 16px;
+}
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: var(--white-color);
-
-    font-family: 'Gill Sans', sans-serif;
-    font-weight: 300;
-    color: var(--grey-color);
-
 }
 
 /* Typography */
+
+@font-face {
+    font-family: GillSans;
+    src: url(./font_gill-sans/Gill\ Sans\ Light.otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: GillSans;
+    src: url(./font_gill-sans/Gill\ Sans\ Bold.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: GillSans;
+    src: url(./font_gill-sans/Gill\ Sans\ Medium.otf);
+    font-weight: 400;
+}
+
+
+h1, h2, h3, h4, p, ul, li {
+    font-family: GillSans, sans-serif;
+    font-weight: 300;
+    color: var(--grey-color);
+}
 
 h1 {
     font-size: 4.5em; /* 64px */
