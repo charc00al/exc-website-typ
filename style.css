@@ -16,10 +16,34 @@
     margin: 0;
     padding: 0;
     background-color: var(--white-color);
+
     font-family: 'Gill Sans', sans-serif;
+    font-weight: 300;
+    color: var(--grey-color);
+
 }
 
 /* Typography */
+
+h1 {
+    font-size: 4.5em; /* 64px */
+}
+
+h2 {
+    font-size: 3em; /* 48px */
+}
+
+h3 {
+    font-size: 1.75em; /* 28px */
+}
+
+h4 {
+    font-size: 1.125em; /* 18px */
+}
+
+p, li {
+    font-size: 1em; /* 16px */
+}
 
 /* ----------------------------------- */
 
@@ -39,23 +63,32 @@
 
     /* Grid */
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: var(--spacing);
+    padding: calc(var(--spacing) * 2);
 }
 
-
-.header, .hero, .logo, .logo-img {
-    background: transparent;
-}
 /* Navbar */
 
-.header .logo-img {
-    filter: brightness(0) invert(1);
+.logo {
+    grid-column: 1 / span 2;
+}
+
+.menu {
+    grid-column: 4 / span 1;
+}
+
+.hamburger-menu {
+    max-width: 100%;
+    max-height: calc(var(--spacing) * 3);
 }
 
 .navbar-list {
     display: none;
 }
+
+/* Hero */
 
 .hero-text {
     background: transparent;
@@ -66,11 +99,14 @@
 
 /* Body Wrapper */
 
+.squares-container {
+    display: none;
+}
 
 
 /* ----------------------------------- */
 
-/* Media */
+/* Styles */
 
 .logo-img {
     max-width: 100%;
@@ -79,4 +115,12 @@
 
 img {
     max-width: 100%;
+}
+
+.navbar, .header, .hero, .logo, .logo-img, .menu, .hamburger-menu {
+    background: transparent;
+}
+
+.logo-img, .hamburger-menu {
+    filter: brightness(0) invert(1);
 }
