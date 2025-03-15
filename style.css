@@ -174,7 +174,7 @@ h4, button {
     display: grid;
     grid-template-rows: repeat(4, auto);
     gap: calc(var(--spacing) * 7);
-    padding: calc(var(--spacing) * 2);
+    padding: calc(var(--spacing) * 3);
     line-height: 1.7em;
 }
 
@@ -214,15 +214,17 @@ h4, button {
 }
 
 .form-email input {
-    width: 100%;
-    height: 60%;
-    border-radius: 10px;
-    border: 1px solid var(--grey-border);
-    background-color: var(--light-grey-color);
+    height: 70%;
 }
 
 .form-text {
     grid-area: 2 / 1 / 4 / 4;
+}
+
+.form-text textarea {
+    height: 90%;
+    resize: none;
+
 }
 
 .form-button {
@@ -230,6 +232,28 @@ h4, button {
     justify-self: end;
     align-self: end;
 }
+
+/* ----------------------------------- */
+
+/* Footer */
+
+
+
+.footer {
+    background-color: var(--light-grey-color);
+    grid-row: contact / span 1;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: calc(var(--spacing) *5);
+    padding: calc(var(--spacing) * 5);
+    line-height: 1.7em;
+}
+
+.footer-bold, .footer p, .footer .helpline {
+    background-color: var(--light-grey-color);
+}
+
+
 
 
 /* ----------------------------------- */
@@ -252,6 +276,12 @@ img {
 h2, .typ, .agency, .twofourseven {
     color: var(--orange-color);
 }
+
+.footer-bold {
+    font-weight: 500;
+    color: var(--grey-color);
+}
+
 
 .logo-img, .hamburger-menu {
     filter: brightness(0) invert(1);
@@ -289,3 +319,14 @@ button {
     /* Actions */
     cursor: pointer; /* Show pointer on hover */
   }
+
+  /* Form */
+
+.form-input-area {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--grey-border);
+    background-color: var(--light-grey-color);
+    margin: 2% 0;
+}
+
