@@ -99,8 +99,8 @@ p, li {
     grid-column: 1 / span 4;
     grid-row: 2 / span 1;
     justify-self: center;
-    text-align: center;
 }
+
 
 .never-stop {
     color: var(--white-color);
@@ -122,7 +122,6 @@ p, li {
 
 /* Body Wrapper */
 
-
 .body-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -132,8 +131,9 @@ p, li {
     row-gap: calc(var(--spacing) * 8);
     padding: calc(var(--spacing) * 2);
     list-style-position: inside;
-
 }
+
+/* About */
 
 .about, .service-text, .contact-container {
     grid-column: 1 / span 4;
@@ -141,21 +141,44 @@ p, li {
 
 .about {
     grid-row: about / span 1;
-    text-align: center;
     letter-spacing: 0px;
+    margin: 10% 0 5%;
 }
+
+
 
 .intro {
     text-transform: uppercase;
     line-height: 2em;
-
+    margin-bottom: 10%;
 }
+
+/* Services */
 
 .service-text {
     background-color: var(--white-color);
     border-radius: 72px;
     box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.03);
+    padding: 5%;
 }
+
+.service-name {
+    padding-top: 3%;
+}
+
+.service-intro {
+    margin: 8% 0;
+    line-height: 1.4em;
+}
+
+.service-list {
+    list-style-position: outside;
+    line-height: 1.7em;
+    padding-left: 10%;
+    padding-bottom: 5%;
+
+}
+
 
 
 /* ----------------------------------- */
@@ -183,4 +206,7 @@ img {
     display: none;
 }
 
+.hero, .about, .service-name, .service-intro  {
+    text-align: center;
+}
 
