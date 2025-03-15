@@ -15,6 +15,8 @@
 html {
     font-size: 16px;
 }
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,27 +26,8 @@ html {
 
 /* Typography */
 
-@font-face {
-    font-family: GillSans;
-    src: url(./font_gill-sans/Gill\ Sans\ Light.otf);
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: GillSans;
-    src: url(./font_gill-sans/Gill\ Sans\ Bold.otf);
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: GillSans;
-    src: url(./font_gill-sans/Gill\ Sans\ Medium.otf);
-    font-weight: 400;
-}
-
-
 h1, h2, h3, h4, p, ul, li {
-    font-family: GillSans, sans-serif;
+    font-family: 'Gill Sans', sans-serif;
     font-weight: 300;
     color: var(--grey-color);
 }
@@ -59,9 +42,8 @@ h2 {
 }
 
 h3 {
-    font-size: 28px;
-/*     font-size: 1.75em; /* 28px */
- */}
+    font-size: 1.4em; /* 22.4px */
+}
 
 h4 {
     font-size: 1.125em; /* 18px */
@@ -125,7 +107,7 @@ p, li {
     margin-top: 10%;
 }
 
-.typ-agency {
+.typ, .agency {
     color: var(--orange-color);
 }
 
@@ -165,6 +147,8 @@ p, li {
 
 .intro {
     text-transform: uppercase;
+    line-height: 2em;
+
 }
 
 .service-text {
@@ -187,7 +171,7 @@ img {
     max-width: 100%;
 }
 
-.navbar, .header, .hero, .hero-text, .logo, .logo-img, .menu, .hamburger-menu {
+.navbar, .header, .hero, .hero-text, .logo, .logo-img, .menu, .hamburger-menu, .typ, .agency {
     background: transparent;
 }
 
