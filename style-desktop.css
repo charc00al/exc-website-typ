@@ -85,7 +85,7 @@ li {
     justify-content: space-between;
 }
 
-.header .logo img{
+.header .logo img {
     max-width: 100%;
     max-height: calc(var(--spacing) * 6);
     object-fit: contain;
