@@ -27,6 +27,9 @@ html {
     font-family: 'Gill Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
+    /* Prevents blue hightlighting on mobile */
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 /* Typography */
@@ -73,11 +76,13 @@ h4, button {
 
 /* || Navbar */
 
-.logo {
+.logo-container {
     grid-column: 1 / span 2;
 }
 
-.menu {
+
+
+.menu-container {
     grid-column: 4 / span 1;
     justify-self: end;
 }
@@ -173,9 +178,13 @@ h4, button {
     grid-template-rows: repeat(4, auto);
     gap: calc(var(--spacing) * 7);
     padding: calc(var(--spacing) * 3);
+}
+
+.adress, .helpline {
     line-height: 1.7em;
 }
 
+ 
 /* Helpline */
 
 .helpline {
