@@ -21,7 +21,6 @@ html {
     margin: 0;
     padding: 0;
     /* Color */
-    background-color: var(--white-color);
     color: var(--grey-color);
     /* Font */
     font-family: 'Gill Sans', sans-serif;
@@ -112,6 +111,7 @@ h4, button {
 /* Body Wrapper */
 
 .body-wrapper {
+    background-color: var(--white-color);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 
@@ -307,11 +307,6 @@ h2, .typ, .agency, .twofourseven {
 
 .logo-img, .hamburger-menu {
     filter: brightness(0) invert(1);
-}
-
-/* Transparent elements */
-.navbar, .header, .hero, .hero-text, .logo-container, .logo, .logo-img, .menu-container, .menu, .hamburger-menu, .typ, .agency {
-    background: transparent;
 }
 
 /* Hiden elements */
