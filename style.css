@@ -285,8 +285,7 @@ h4, button {
 
 .logo-img {
     max-width: 100%;
-    max-height: clamp((var(--spacing) * 3), 4vw, (var(--spacing) * 6));
-    padding: clamp(0.5rem, 2vw, 2rem);
+    max-height: clamp((var(--spacing) * 3), 4vw, (var(--spacing) * 5));
 }
 
 img {
@@ -335,6 +334,7 @@ button {
     min-width: 100px;
     /* Actions */
     cursor: pointer; /* Show pointer on hover */
+    padding: 0 15px;
   }
 
   /* Form */
@@ -347,3 +347,38 @@ button {
     margin: 2% 0;
 }
 
+
+/* ----------------------------------- */
+
+/* Media Queries */
+
+@media (min-width: 800px) {
+    .header-wrapper {
+        padding: calc(var(--spacing) * 4);
+    }
+    
+    .menu-container {
+        display: none;
+    }
+
+    .navbar {
+        grid-column: 2 / span 3;
+        grid-row: 1;
+        justify-items: end;
+    }
+
+    .navbar-list {
+        list-style-type: none;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        gap: calc(var(--spacing) * 4);
+    }
+
+    .navbar-list a {
+        color: var(--white-color);
+        text-decoration: none;
+        padding: 8px;
+        font-size: 1.1em;
+    }
+}
