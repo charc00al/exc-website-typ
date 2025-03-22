@@ -1,5 +1,4 @@
 /* Variables */
-
 :root {
     /* Colors */
     --white-color: #F8F8F8;
@@ -7,23 +6,24 @@
     --grey-color: #818285;
     --grey-border: rgba(217, 217, 217, 0.5);
     --orange-color: #FAA74C;
-
     /*Spacing*/
     --spacing: 8px;
 }
 
 /* Global Styles */
-
 html {
     font-size: 16px;
 }
 
 * {
+    /* Size */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* Color */
     background-color: var(--white-color);
     color: var(--grey-color);
+    /* Font */
     font-family: 'Gill Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -33,27 +33,22 @@ html {
 }
 
 /* Typography */
-
 h1 {
     font-size: 4.5em; /* 64px */
 }
-
 h2 {
     font-size: 3em; /* 48px */
 }
-
 h3 {
     font-size: 1.4em; /* 22.4px */
 }
-
 h4, button {
     font-size: 1.125em; /* 18px */
 }
 
 /* ----------------------------------- */
 
-/* Hero Wrapper */
-
+/* Header Wrapper */
 .header-wrapper {
 
     /* Size */
@@ -79,8 +74,6 @@ h4, button {
 .logo-container {
     grid-column: 1 / span 2;
 }
-
-
 
 .menu-container {
     grid-column: 4 / span 1;
@@ -111,6 +104,7 @@ h4, button {
 .agency {
     font-size: 0.7em; /* cca48px */
 }
+
 
 /* ----------------------------------- */
 
@@ -314,7 +308,7 @@ h2, .typ, .agency, .twofourseven {
 }
 
 /* Transparent elements */
-.navbar, .header, .hero, .hero-text, .logo, .logo-img, .menu, .hamburger-menu, .typ, .agency {
+.navbar, .header, .hero, .hero-text, .logo-container, .logo, .logo-img, .menu-container, .menu, .hamburger-menu, .typ, .agency {
     background: transparent;
 }
 
