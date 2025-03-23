@@ -449,10 +449,9 @@ button {
         grid-template-rows: 
             [about] auto [services1] min-content [services2] min-content [services3] min-content [contact] auto [body-end];
         column-gap: var(--spacing);
-        row-gap: calc(var(--spacing) * 8);
+        row-gap: calc(var(--spacing) * 15);
         padding: calc(var(--spacing) * 8);
         padding-left: calc(var(--spacing) * 18);
-        font-size: 1.125em;
     }
 
     /* About */
@@ -488,7 +487,8 @@ button {
     }
 
     .service-intro {
-        margin: 5% 0
+        margin: 4% 0;
+        font-weight: 400;
     }
 
     /* Contact */
