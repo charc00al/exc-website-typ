@@ -121,22 +121,22 @@ h4, button {
     list-style-position: inside;
 }
 
-/* || About */
-
 .about, .service-text, .contact-container {
     grid-column: 1 / span 4;
 }
 
+/* || About */
+
 .about {
     grid-row: about / span 1;
     letter-spacing: 0px;
-    margin: 10% 0 5%;
+    margin: 10% 0 2%;
 }
 
 .intro {
     text-transform: uppercase;
     line-height: 2em;
-    margin-bottom: 10%;
+    margin-bottom: 1.5em;
 }
 
 /* || Services */
@@ -351,13 +351,25 @@ button {
 
 /* Media Queries */
 
+@media (min-width: 660px) {
+
+    /* || Body */
+    .body-wrapper {
+        padding: calc(var(--spacing) * 2) calc(var(--spacing) * 5);
+    }
+
+    /* About */
+    .about {
+        margin-top: 5%;
+    }
+}
+
 @media (min-width: 800px) {
 
-    /* Navbar */
+    /* || Navbar */
     .header-wrapper {
         padding: calc(var(--spacing) * 4);
         grid-template-rows: 20% auto 50%;
-
     }
     
     .menu-container {
@@ -384,11 +396,16 @@ button {
         padding: 8px;
         font-size: 1.1em;
     }
+
+    /* || Body */
+    .body-wrapper {
+        padding: calc(var(--spacing) * 2) calc(var(--spacing) * 12);
+    }
 }
 
 @media (min-width: 950px) {
-    /* Hero */
 
+    /* || Hero */
     .hero {
         grid-column: 1 / -1;
         grid-row: 2 / span 1;
