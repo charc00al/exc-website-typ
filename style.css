@@ -115,14 +115,9 @@ h4, button {
     display: grid;
     grid-template-rows: 
         [about] auto [services1] auto [services2] auto [services3] auto [contact] auto [body-end];
-    column-gap: var(--spacing);
     row-gap: calc(var(--spacing) * 8);
     padding: calc(var(--spacing) * 2);
     list-style-position: inside;
-}
-
-.about, .service-text, .contact-container {
-    grid-column: 1 / span 4;
 }
 
 /* || About */
@@ -142,7 +137,6 @@ h4, button {
 /* || Services */
 
 .service-text {
-    background-color: var(--white-color);
     border-radius: 72px;
     box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.03);
     padding: 5%;
