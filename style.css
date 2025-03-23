@@ -113,7 +113,6 @@ h4, button {
 .body-wrapper {
     background-color: var(--white-color);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 
         [about] auto [services1] auto [services2] auto [services3] auto [contact] auto [body-end];
     column-gap: var(--spacing);
