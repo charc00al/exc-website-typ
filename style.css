@@ -260,8 +260,6 @@ h4, button {
 
 /* Footer */
 
-
-
 .footer {
     background-color: var(--light-grey-color);
     grid-row: contact / span 1;
@@ -295,8 +293,6 @@ h4, button {
 .phone-num-footer {
     grid-area: 2 / 2 / 3 / 4;
 }
-
-
 
 /* ----------------------------------- */
 
@@ -486,6 +482,9 @@ button {
     .about {
         grid-column: 1 / span 3;
         margin: 0;
+        font-size: clamp(1em, 2vw, 1.8em);
+        white-space: nowrap;
+        overflow: visible;
     }
 
     /* Services image */
