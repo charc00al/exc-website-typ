@@ -471,11 +471,10 @@ button {
     .body-wrapper {
         grid-template-columns: 4fr 1fr 6fr;
         grid-template-rows: 
-            [about] auto [services1] min-content [services2] min-content [services3] min-content [contact] auto [body-end];
+            [about] auto [squares] auto [services1] min-content [services2] min-content [services3] min-content [contact] auto [body-end];
         column-gap: var(--spacing);
         row-gap: calc(var(--spacing) * 15);
         padding: calc(var(--spacing) * 8);
-        padding-left: calc(var(--spacing) * 18);
     }
 
     /* About */
