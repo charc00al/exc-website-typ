@@ -193,7 +193,7 @@ h4, button {
     display: grid;
     grid-template-rows: repeat(4, auto);
     gap: calc(var(--spacing) * 7);
-    padding: calc(var(--spacing) * 3);
+    padding: calc(var(--spacing) * 6);
 }
 
 .adress, .helpline {
@@ -504,7 +504,6 @@ button {
         background-color: var(--white-color);
         border-radius: 72px;
         box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.025);
-
         /*Flex*/
         display: flex;
         flex-direction: column;
@@ -556,4 +555,6 @@ button {
     .contact-container {
         grid-column: 1 / span 3;
     }
+
+    
 }
