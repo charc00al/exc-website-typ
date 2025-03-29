@@ -554,7 +554,32 @@ button {
     /* Contact */
     .contact-container {
         grid-column: 1 / span 3;
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+        grid-template-rows: repeat(4, auto);
+        column-gap: calc(var(--spacing) * 10);
+        row-gap: calc(var(--spacing) * 8);
     }
 
+    .contact-us {
+        grid-column: 1 / span 2;
+        justify-self: center;
+    }
     
+    .adress, .helpline {
+        grid-column: 1;
+        justify-self: center;
+        padding-left: clamp(0, 2vw, 2em);
+    }
+
+    .helpline {
+        grid-template-rows: min-content auto;
+        gap: calc(var(--spacing) * 3);
+    }
+
+    .contact-form {
+        grid-column: 2;
+        grid-row: 2 / span 3;
+        max-width: 23em;
+    }
 }
