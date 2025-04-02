@@ -352,8 +352,11 @@ button {
     /* Actions */
     cursor: pointer; /* Show pointer on hover */
     padding: 0 15px;
-  }
+}
 
+button:hover {
+    background: rgb(250, 155, 76);
+}
   /* Form */
 
 .form-input-area {
