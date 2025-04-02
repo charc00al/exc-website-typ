@@ -380,6 +380,16 @@ button {
     .about {
         margin-top: 5%;
     }
+
+    /* Footer */
+
+    .footer {
+        padding: calc(var(--spacing) * 5) 10%;
+    }
+
+    .helpline-footer {
+        grid-template-columns: min-content 1fr;
+    }
 }
 
 @media (min-width: 800px) {
@@ -582,4 +592,5 @@ button {
         grid-row: 2 / span 3;
         max-width: 23em;
     }
+
 }
